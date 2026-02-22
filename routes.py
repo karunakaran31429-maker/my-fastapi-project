@@ -61,4 +61,4 @@ def get_forecast(background_tasks: BackgroundTasks, db: Session = Depends(databa
     
     # This triggers the Analytics SMS!
     background_tasks.add_task(send_analytics_sms, "\n".join(sms_lines))
-    return forecastsgit 
+    return forecasts
